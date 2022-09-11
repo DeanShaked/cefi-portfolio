@@ -1,12 +1,13 @@
-import React from 'react';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div>
-
+      <h1>{process.env.REACT_APP_API_KEY}</h1>
+      <h1>{process.env.REACT_APP_API_SECRET}</h1>
     </div>
   );
-}
+};
 
 export default App;

@@ -2,12 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon dist/server.js"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Dean Shaked",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",

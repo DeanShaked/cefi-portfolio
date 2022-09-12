@@ -1,8 +1,6 @@
+import { Express } from "express";
+import { fetchWallet } from "../controllers/ratesController";
 
-import { Router } from 'express';
-import { body } from 'express-validator';
-import { fetchWallet } from '../controllers/ratesController';
+function routes(app: Express) {}
 
-const route = Router();
-
-route.get('/', fetchWallet);
+export default routes;

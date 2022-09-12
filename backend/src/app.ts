@@ -1,16 +1,17 @@
 import config from "config";
 import logger from "./utils/logger";
 import express from "express";
-import { ftxClient } from "./utils/ftxClient";
-import ratesRoutes from "./routes/ratesRoutes";
+import wallet_routes from "./routes/wallet.routes";
+import cors from "cors";
 
 const PORT = config.get<number>("port");
 
 const app = express();
+app.use(cors());
+app.use(express.json());
 
-app.use("/rates", ratesRoutes);
+app.use("/wallet", wallet_routes);
 
 app.listen(PORT, async () => {
   logger.info(`Server is running at https://localhost:${PORT}`);
-  // console.log("ftxClient", ftxClient);
 });

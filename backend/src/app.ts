@@ -13,5 +13,5 @@ app.use(express.json());
 app.use("/wallet", wallet_routes);
 
 app.listen(PORT, async () => {
-  logger.info(`Server is running at https://localhost:${PORT}`);
+  logger.info(`Server is running at http://localhost:${PORT}`);
 });

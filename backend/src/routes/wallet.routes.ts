@@ -9,7 +9,6 @@ const route = Router();
  * @Desc Fetch user's wallet
  * @Security Private
  */
-route.get("/wallet", fetchWallet);
-route.get("/");
+route.get("/", fetchWallet);
 
 export default route;

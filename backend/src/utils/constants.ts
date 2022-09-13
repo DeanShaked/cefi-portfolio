@@ -1,6 +1,7 @@
 export const paths = {
   rootPath: "/",
-  walletPath: "/wallet",
+  walletPath: "/wallet/coins",
+  walletBalancePath: "/wallet/balances",
   accountPath: "/account",
 };
 
